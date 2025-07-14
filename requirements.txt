@@ -3,3 +3,4 @@ opencv-python-headless
 Pillow
 ultralytics
 sympy
+streamlit-option-menu
