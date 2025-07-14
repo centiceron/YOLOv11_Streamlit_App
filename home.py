@@ -1,6 +1,9 @@
 #Importing libs
 import streamlit as st
 from streamlit_option_menu import option_menu
+import main
+import signup 
+import account
 
 #page layout
 st.set_page_config(
@@ -24,3 +27,16 @@ def signin():
         email = st.text_input('Email address')
         password = st.text_input('Password')
         st.form_submit_button('Sign In')
+
+if app == 'Home':
+    st.subheader("This is the home page of my app, you may head over to the App page to access the YOLOv11 model for object detection and various other model configurations")
+if app == 'App':
+        main.app()
+if app == 'Sign up':
+        signin()
+if app == 'Account':
+        account.app()
+
+
+
+
